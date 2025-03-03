@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+  }
+  body {
+	font-family: "Open Sans", sans-serif;
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  .container .main-box {
+	width: 450px;
+	height: 600px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+	position: relative;
+	border: 2px solid #E6E6E6;
+  }
+  .container .main-box .one{
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+  }
+  .container .main-box .two {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid white;
+	position: absolute;
+	top: 255px;
+	right: 25px;
+	box-shadow: 0 0 5px grey;
+  }
+  .main-box .text h3 {
+	color: #454545;
+	font-weight: 400;
+	font-size: 30px;
+	padding-left: 10px;
+	margin: 5px 0;
+	text-transform: capitalize;
+  }
+  .main-box .text .p {
+	padding-left: 10px;
+	color: #999999;
+  }
+  .main-box .text .p a {
+	text-decoration: none;
+	color: #009688;
+	text-transform: capitalize;
+	font-weight: 400;
+  }
+  .main-box .text .p a:hover {
+	text-decoration: underline;
+  }
+  .main-box .text .p2 {
+	padding-left: 10px;
+	color : #999999;
+  }
+  .main-box .text .location i {
+	color: #009688;
+	padding-right: 5px;
+  }
+  .main-box .text .location {
+	color: #999999;
+	padding-left: 10px;
+  }
+  .main-box .line {
+	width: 400px;
+	height: 20px;
+	margin: 10px auto;
+	background-color: #F1F2F2;
+	position: relative;
+  }
+  .main-box .line::before {
+	content: "";
+	width: 50%;
+	height: 100%;
+	background-color: #009688;
+	position: absolute;
+	border-radius: 0 10px 10px 0;
+  }
+  .main-box .Evaluation {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: 20px;
+	text-align: center;
+  }
+  .main-box .Evaluation .col {
+	margin: auto;
+  }
+  .main-box .Evaluation .col h4 {
+	margin: 10px 0;
+  }
+  .main-box .Evaluation .col p {
+	color: #999999;
+	margin: 5px 0;
+  }
+  @media (max-width: 450px) {
+	.container .main-box {
+	  width: 300px;
+	  height: 500px;
+	}
+	.container .main-box .two {
+	  width: 60px;
+	  height: 60px;
+	  border-radius: 50%;
+	  border: 2px solid white;
+	  position: absolute;
+	  top: 165px;
+	  right: 25px;
+	  box-shadow: 0 0 5px grey;
+	}
+	.main-box .text h3 {
+	  color: #454545;
+	  font-weight: 400;
+	  font-size: 20px;
+	  padding-left: 10px;
+	  margin: 5px 0;
+	  text-transform: capitalize;
+	}
+	.main-box .text .p {
+	  padding-left: 10px;
+	  color: #999999;
+	  font-size: 13px;
+	}
+	.main-box .line {
+	  width: 275px;
+	}
+	
+  .main-box .Evaluation {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+	gap: 10px;
+  }
+  }
